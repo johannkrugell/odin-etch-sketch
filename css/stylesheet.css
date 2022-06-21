@@ -1,0 +1,11 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paper{
+  height: 550PX;
+  width: 550px;
+  border: solid 1px black;
+}
