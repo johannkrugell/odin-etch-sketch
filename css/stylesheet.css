@@ -5,7 +5,16 @@ body{
 }
 
 .paper{
-  height: 550PX;
-  width: 550px;
+  height: 600px;
+  width: 600px;
   border: solid 1px black;
+  border-collapse: collapse;
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+
+.square{
+  border: solid 1px gray;
+  flex-grow: 1;
 }
