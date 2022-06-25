@@ -12,6 +12,16 @@ function createGrid() {
     square.classList.add("square");
     square.style.width = `${((600-((gridSize*2)))/ gridSize)}px`;
     square.style.height = `${((600-((gridSize*2)))/ gridSize)}px`;
-    paper.appendChild(square);    
-  }  
+    paper.appendChild(square); 
+    // add event lister that call function to random color on hover
+    square.addEventListener("mouseover", function(){
+      square.style.backgroundColor = `rgb(${randomColor()},${randomColor()},${randomColor()})` 
+    }  
+      ,false)}  
+}
+
+// function that generates a random number between 1 and 255 that is used to 
+// generate the color of the square
+function randomColor(){
+  return Math.floor((Math.random()*255) +1)
 }
