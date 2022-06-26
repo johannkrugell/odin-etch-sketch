@@ -5,11 +5,22 @@
     <title>Etch-Sketch</title>
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    
+    <!--Google fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Londrina+Outline&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <h1 id="header">Etch-Sketch</h1>  
-    <!-- the canvas / paper that will contain the squares-->
-    <div id="container" class="paper">
+    <div class="page">
+      <div class="unicorncontainer"></div>
+      <div class="content">
+        <h1 id="header">Etch-Sketch</h1>  
+          <!-- the canvas / paper that will contain the squares-->
+        <button id="buttoncreate" class="promptsquares">Start Drawing</button>
+        <div id="container" class="paper"></div>
+      </div>
+      <div class="unicorncontainer"></div>
     </div>
   </body>
 </html>
